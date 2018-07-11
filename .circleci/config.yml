@@ -85,9 +85,9 @@ workflows:
   dockerfile_wizard:
     jobs:
       - build:
-          context: defaults
+          context: default
 
       - test_image:
-          context: defaults
+          context: default
           requires:
             - build
